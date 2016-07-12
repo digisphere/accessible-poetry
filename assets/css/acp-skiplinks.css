@@ -1,0 +1,45 @@
+#acp_skiplinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 0; }
+
+body.acp-dark #acp_skiplinks li a,
+body.acp-bright #acp_skiplinks li a,
+#acp_skiplinks li a {
+  background: #4169E1 !important;
+  color: white !important; }
+
+#acp_skiplinks li a {
+  display: block;
+  height: 48px;
+  font-size: 15px !important;
+  padding: 0 40px;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+  z-index: 99999;
+  left: 15px;
+  top: -68px;
+  margin-left: 15px;
+  text-transform: capitalize;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+#acp_skiplinks li a:focus {
+  top: 15px;
+  outline: none;
+  text-decoration: none; }
+
+#acp_skiplinks.left li a {
+  left: 15px;
+  right: auto;
+  margin-left: auto; }
+
+#acp_skiplinks.right li a {
+  right: 15px;
+  left: auto;
+  margin-left: auto; }

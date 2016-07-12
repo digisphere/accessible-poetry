@@ -1,0 +1,49 @@
+#accessible-poetry-panel {
+	h2, .form-table, .acp-info {
+		background-color: white;
+		margin: 0 0 1px;
+		border-bottom: 1px solid #e5e5e5;
+	}
+	.acp-info {
+		padding: 8px 10px;
+		max-width: 860px;
+	}
+	h2 {
+		margin-top: 10px;
+		padding: 8px 10px;
+		max-width: 860px;
+	}
+	
+	.form-table {
+		max-width: 880px;
+		th {
+			padding: 20px 10px;
+		}
+	}
+	
+	code {
+		display: block;
+		margin-top: 5px;
+		padding: 5px;
+		text-align: center;
+	}
+	
+	.acp-section-info {
+		background-color: white;
+		margin: 0 0 2px;
+		padding: 10px;
+	}
+	
+	.rtl & {
+		.form-table {
+			tr {
+				border-bottom: 1px solid #e5e5e5;
+			}
+			td {
+			}
+			th {
+				min-width: 240px;
+			}
+		}
+	}
+}

@@ -1,0 +1,405 @@
+@import 'vars';
+@import 'typo';
+@import 'mixin';
+
+// readable font
+
+body.acp-readable {
+	* {
+		font-family: Arial, sans-serif !important;
+	}
+	.material-icons {
+		font-family: 'Material Icons' !important;
+	}
+}
+
+// focus
+
+body.acp-focus-blue {
+	button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+	input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus,
+	*:focus {
+		outline: thin dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+	}
+}
+body.acp-focus-red {
+	button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus,
+	input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="number"]:focus, textarea:focus,
+	*:focus {
+		outline: thin dotted;
+		outline: 2px solid red;
+		outline-offset: -2px;
+	}
+}
+
+// toolbar
+
+#acp-toolbar-close {
+	appearance: normal;
+	-webkit-appearance: none;
+	padding: 0;
+	background-color: transparent !important;
+	color: $gray !important;
+	position: absolute;
+	right: 5px; top: 5px;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: normal;
+	text-transform: none;
+	border: 0;
+	i {
+		background-color: transparent !important;
+		color: $gray !important;
+	}
+	
+	&:hover, &:focus {
+		outline: none;
+		color: $red !important;
+		@include transition(all 100ms ease);
+		
+		i {
+			color: $red !important;
+		}
+	}
+	
+	.rtl & {
+		right: auto;
+		left: 5px;
+	}
+}
+
+#acp-toggle-toolbar {
+	background-color: $blue !important;
+	color: white !important;
+	cursor: pointer;
+	position: fixed;
+	z-index: 100000;
+	top: -120px; left: 30px;
+	cursor: pointer;
+	padding: 0;
+	line-height: 1;
+	width: 70px; height: 70px;
+	border: 5px solid white;
+	@include border-radius(50%);
+	@include box-shadow(0 0 24px rgba(black, 0.75));
+	@include transition(top 600ms ease-out 300ms);
+	
+	&:focus, &:hover {
+		outline: none;
+		border: 5px solid $red;
+	}
+	
+	.rtl & {
+		left: auto;
+		right: 30px;
+	}
+}
+body.acp-readable #acp-toolbar,
+body.acp-marklinks #acp-toolbar,
+body.acp-dark #acp-toolbar,
+body.acp-bright #acp-toolbar,
+#acp-toolbar {
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	top: 30px;
+	bottom: 30px;
+	left: 30px;
+	width: 310px;
+	overflow: hidden;
+	background-color: white !important;
+	border: 1px solid #999;
+	
+	@include border-radius(12px);
+	@include box-shadow(0 0 24px black);
+	
+	.acp-author {
+		
+		position: absolute;
+		bottom: 0;
+		right: 0; left: 0;
+		text-align: center;
+		font-size: 13px;
+		height: 32px;
+		line-height: 32px;
+		border-top: 1px solid #999;
+		font-family: 'Merriweather Sans', sans-serif !important;
+		font-weight: 400;
+		background-color: darken($blue, 0%) !important;
+		a {
+			color: white !important;
+			background-color: darken($blue, 0%) !important;
+		}
+	}
+	
+	.rtl & {
+		left: auto;
+		right: 30px;
+	}
+}
+
+#acp-toolbar > div {
+	background-color: white !important;
+}
+
+#acp-toolbar-title {
+	background-color: white !important;
+	text-align: center;
+	margin: 10px 0 5px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	color: $gray-dark !important;
+	
+	.rtl & {
+		font-style: normal;
+		font-size: 24px;
+		font-family: 'Open Sans Hebrew', sans-serif;
+
+	}
+}
+#acp-toolbar-extra {
+	padding: 4px;
+	position: absolute;
+	bottom: 32px; right: 0; left: 0;
+	
+	a {
+		display: block;
+		background-color: $blue-bright !important;
+		color: white !important;
+		height: 38px;
+		line-height: 40px;
+		font-family: 'Merriweather Sans', sans-serif !important;
+		font-weight: 400;
+		font-size: 13px;
+		@include border-radius(3px);
+		@include transition(all 100ms ease);
+		overflow: hidden;
+		i {
+			float: left;
+			margin-right: 10px;
+			line-height: 38px;
+			width: 40px;
+			text-align: center;
+			background-color: darken($blue, 10%) !important;
+			@include transition(all 100ms ease);
+		}
+		
+		&:hover, &:focus {
+			background-color: darken($blue, 10%) !important;
+			color: white !important;
+			
+			i {
+				color: white !important;
+				background-color: $blue-bright !important;
+			}
+		}
+		
+		&:first-child {
+			margin-bottom: 4px;
+		}
+	}
+	
+	.rtl & {
+		a {
+			i {
+				float: right;
+				margin-left: 10px;
+				margin-right: auto;
+			}
+		}
+	}
+}
+body.acp-readable .acp-toolbar-label,
+body.acp-marklinks .acp-toolbar-label,
+body.acp-dark .acp-toolbar-label,
+body.acp-bright .acp-toolbar-label,
+.acp-toolbar-label {
+	display: block;
+	text-align: center;
+	margin: 5px 0;
+	font-family: 'Merriweather Sans', sans-serif !important;
+	font-weight: 400;
+	background-color: white !important;
+	color: $gray-dark !important;
+}
+.acp-toolbar-btn-group {
+	display: flex;
+	padding: 2px;
+}
+body.acp-readable .acp-toolbar-btn,
+body.acp-marklinks .acp-toolbar-btn,
+body.acp-dark .acp-toolbar-btn,
+body.acp-bright .acp-toolbar-btn,
+.acp-toolbar-btn {
+	width: 33%;
+	flex-grow: 1;
+	text-transform: none;
+	font-size: 13px;
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 400;
+	line-height: 1.681;
+	margin: 2px;
+	padding: 5px;
+	text-align: center;
+	color: white !important;
+	background-color: $blue-bright !important;
+	border-bottom: 4px solid darken($blue, 25%);
+	@include transition(all 100ms ease);
+	@include border-radius(3px);
+	
+	i {
+		line-height: 36px;
+		height: 36px;
+		color: white !important;
+		background-color: $blue-bright !important;
+		@include transition(all 100ms ease);
+	}
+	span {
+		display: block;
+		margin-bottom: 4px;
+		color: white !important;
+		background-color: $blue-bright !important;
+		@include transition(all 100ms ease);
+	}
+	
+	&.acp-active, &:hover, &:focus {
+		background-color: darken($blue, 10%) !important;
+		border-bottom: 4px solid $blue-bright;
+		
+		span, i {
+			background-color: darken($blue, 10%) !important;
+		}
+	}
+	
+	&.acp-btn-reset {
+		display: none;
+	}
+	
+	.rtl &,
+	body.acp-readable.rtl & {
+		font-size: 16px;
+	}
+}
+.acp-toolbar-btn[disabled],
+.acp-toolbar-btn[disabled]:hover,
+.acp-toolbar-btn[disabled]:focus {
+	text-transform: none;
+	font-weight: 400;
+	line-height: 1.681;
+	letter-spacing: normal;
+	background-color: $gray  !important;
+	opacity: 1;
+	padding: 5px;
+	@include border-radius(3px);
+	border-bottom: 4px solid $gray-dark;
+	font-family: 'Merriweather Sans', sans-serif !important;
+	
+	i, span {
+		background-color: $gray  !important;
+	}
+}
+
+
+// contrast
+
+body.acp-dark {
+	background-color: black !important;
+	color: white !important;
+	
+	* {
+		background-color: black !important;
+		color: white !important;
+	}
+	a {
+		color: yellow !important;
+	}
+	.material-icons {
+		color: !important;
+		background-color: transparent !important;
+	}
+	::-webkit-input-placeholder { color:#eee; }
+	::-moz-placeholder { color:#eee; } /* firefox 19+ */
+	:-ms-input-placeholder { color:#eee; } /* ie */
+	input:-moz-placeholder { color:#eee; }
+	
+	input {
+		border: 1px solid white;
+	}
+}
+
+body.acp-bright {
+	background-color: white !important;
+	color: black !important;
+	
+	* {
+		background-color: white !important;
+		color: black !important;
+	}
+	.material-icons {
+		color: white !important;
+		background-color: transparent !important;
+	}
+	a {
+		color: blue !important;
+	}
+	
+	::-webkit-input-placeholder { color:#333; }
+	::-moz-placeholder { color:#333; } /* firefox 19+ */
+	:-ms-input-placeholder { color:#333; } /* ie */
+	input:-moz-placeholder { color:#333; }
+	
+	input {
+		border: 1px solid black;
+	}
+}
+
+// animation
+body.acp-animation {
+	* {
+		transition: none !important;
+		-o-transition: none !important;
+		-ms-transition: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;
+	}
+}
+
+// links underline
+
+body.acp-underline {
+	a, button {
+		text-decoration: underline !important;
+	}
+}
+
+// links highlight
+
+body.acp-marklinks {
+	a, button {
+		background-color: yellow !important;
+		color: black !important;
+	}
+}
+
+@media (min-width: 320px) and (max-height: 830px) {
+	body.acp-readable .acp-toolbar-btn, body.acp-marklinks .acp-toolbar-btn, body.acp-dark .acp-toolbar-btn, body.acp-bright .acp-toolbar-btn, .acp-toolbar-btn {
+		padding: 2px;
+		line-height: 1.21;
+	}
+}
+@media (min-width: 320px) and (max-height: 768px) {
+	body.acp-readable .acp-toolbar-btn, body.acp-marklinks .acp-toolbar-btn, body.acp-dark .acp-toolbar-btn, body.acp-bright .acp-toolbar-btn, .acp-toolbar-btn {
+		padding: 2px;
+		line-height: 1.21;
+	}
+	.rtl body.acp-readable .acp-toolbar-btn, body.acp-readable.rtl body.acp-readable .acp-toolbar-btn, .rtl body.acp-marklinks .acp-toolbar-btn, body.acp-readable.rtl body.acp-marklinks .acp-toolbar-btn, .rtl body.acp-dark .acp-toolbar-btn, body.acp-readable.rtl body.acp-dark .acp-toolbar-btn, .rtl body.acp-bright .acp-toolbar-btn, body.acp-readable.rtl body.acp-bright .acp-toolbar-btn, .rtl .acp-toolbar-btn, body.acp-readable.rtl .acp-toolbar-btn {
+		font-size: 14px;
+	}
+	body.acp-readable .acp-toolbar-label, body.acp-marklinks .acp-toolbar-label, body.acp-dark .acp-toolbar-label, body.acp-bright .acp-toolbar-label, .acp-toolbar-label {
+		margin: 3px 0 2px;
+	}
+}
+

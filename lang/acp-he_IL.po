@@ -1,0 +1,282 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Accessible Poetry\n"
+"POT-Creation-Date: 2016-05-29 02:47+0300\n"
+"PO-Revision-Date: 2016-05-29 02:59+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/acp-panel.php:86
+msgid "Language"
+msgstr "שפה"
+
+#: inc/acp-panel.php:93
+msgid "Images"
+msgstr "תמונות"
+
+#: inc/acp-panel.php:100 inc/acp-toolbar.php:36
+msgid "Links"
+msgstr "קישורים"
+
+#: inc/acp-panel.php:107
+msgid "Titles"
+msgstr "כותרות"
+
+#: inc/acp-panel.php:114
+msgid "Toolbar"
+msgstr "סרגל נגישות"
+
+#: inc/acp-panel.php:121
+msgid "Toolbar Additional Buttons"
+msgstr "לחצנים נוספים לסרגל הנגישות"
+
+#: inc/acp-panel.php:128
+msgid "Font Sizer"
+msgstr "משנה גודל הגופן"
+
+#: inc/acp-panel.php:135 inc/acp_skiplinks.php:8
+msgid "Skiplinks"
+msgstr "קישורי דילוג"
+
+#: inc/acp-panel.php:144
+msgid "Add Language Attribute to the <html> tag"
+msgstr "הוספת מאפיין שפה לתגית ‪<‬html‪>‬"
+
+#: inc/acp-panel.php:152
+msgid "Add empty Alt attribute to images without Alt"
+msgstr "הוספת מאפיין alt לתמונות ללא טקסט חלופי"
+
+#: inc/acp-panel.php:160
+msgid "Replace all title attributes to aria-label on links"
+msgstr "שינוי מאפיין ה-title למאפיין aria-label עבור כל הקישורים"
+
+#: inc/acp-panel.php:168
+msgid "Add underline to all links"
+msgstr "הוספת קו תחתון לכל הקישורים"
+
+#: inc/acp-panel.php:176
+msgid "Add outline to all links & buttons"
+msgstr "הוספת אפקט מסוג Outline לכל קישורים כאשר הם נמצאים במצב פוקוס"
+
+#: inc/acp-panel.php:184
+msgid "Replace all low title tags (h4, h5, h6) with h3 title tag"
+msgstr "החלפת כל התגיות הנמוכות של הכותרות (h4‪,‬ h5‪,‬ h6) בתגית h3"
+
+#: inc/acp-panel.php:192
+msgid "Add tabindex attribute to all the titles"
+msgstr "הוספת Tabindex לכל הכותרות"
+
+#: inc/acp-panel.php:200
+msgid "Disable toolbar for mobile"
+msgstr "ביטול סרגל הנגישות למשתמשי סמארטפונים"
+
+#: inc/acp-panel.php:208
+msgid "Hide the buttons that change the font size"
+msgstr "הסתרת לחצני שינוי גודל הגופן מסרגל הנגישות"
+
+#: inc/acp-panel.php:216
+msgid "Hide the buttons that change the contrast"
+msgstr "הסתרת לחצני שינוי הניגודיות מסרגל הנגישות"
+
+#: inc/acp-panel.php:224
+msgid "Hide the button that add underline to links"
+msgstr "הסתרת הלחצן להוספה והסרה של קו תחתון מקישורים"
+
+#: inc/acp-panel.php:232
+msgid "Hide the button that mark the links"
+msgstr "הסתרת הלחצן להדגשת קישורים"
+
+#: inc/acp-panel.php:240
+msgid "Hide the button that change the font to readable"
+msgstr "הסתרת הלחצן שמאפשר שימוש בגופן קריא"
+
+#: inc/acp-panel.php:248
+msgid "Hide the button that disable the animations"
+msgstr "הסתרת הלחצן שמונע שימוש באנימציות/הנפשה של אלמנטים"
+
+#: inc/acp-panel.php:256
+msgid "Add Accessibility Declaration Button"
+msgstr "הוספת לחצן עבור הצהרת נגישות"
+
+#: inc/acp-panel.php:263
+msgid "Add the link for the Accessibility Declaration"
+msgstr "נא להזין את הקישור אל עמוד הצהרת הנגישות"
+
+#: inc/acp-panel.php:271
+msgid "Add Contact Button"
+msgstr "הוספת לחצן משוב"
+
+#: inc/acp-panel.php:279
+msgid "Add the link for the Contact Button"
+msgstr "נא להזין את הקישור אל עמוד המשוב"
+
+#: inc/acp-panel.php:287
+msgid "Activate skiplinks"
+msgstr "הפעלת קישורי הדילוג"
+
+#: inc/acp-panel.php:295
+msgid "Activate different skiplinks for home page"
+msgstr "הפעלת קישורי דילוג ייחודיים עבור דף הבית"
+
+#: inc/acp-panel.php:303
+msgid ""
+"Include additional tags, classes & id's with the font-size changer (separate "
+"with a comma)"
+msgstr ""
+"הוספת תגיות, קלאסים ו-id’s נוספים שעליהם ישפיעו לחצני שינוי גודל הגופן (ברירת "
+"המחדל היא: p‪,‬ h1‪,‬ h2‪,‬ h3‪,‬ q. נא להפריד באמצעות פסיק)"
+
+#: inc/acp-panel.php:311
+msgid ""
+"Exclude additional tags, classes & id's with the font-size changer (separate "
+"with a comma)"
+msgstr ""
+"ניתן למנוע מלחצני שינוי גודל הגופן מלהשפיע על אלמנטים מסוימים באמצעות שדה זה "
+"(ניתן להזין תגיות, קלאסים ו-id’s. נא להפריד באמצעות פסיק)"
+
+#: inc/acp-panel.php:396
+msgid ""
+"To display the toolbar add the next function right after the opening of the "
+"<body> tag: "
+msgstr ""
+"להצגת סרגל הנגישות יש להוסיף את הפונקציה הבאה מיד לאחר פתיחת תגית ה-‪body‬:‪"
+
+#: inc/acp-panel.php:399
+msgid ""
+"To display the skiplinks add links to the skiplinks menu's and then add the "
+"next function right after the opening of the <body> tag: "
+msgstr ""
+"להצגת קישורי הדילוג יש להזין את הקישורים בתפריטים הייעודים לכך ואז יש להוסיף "
+"את הפונקציה הבאה מיד לאחר פתיחת תגית ה-body:‪"
+
+#: inc/acp-panel.php:448
+msgid "-- None --"
+msgstr "ללא"
+
+#: inc/acp-panel.php:449
+msgid "Red"
+msgstr "אדום"
+
+#: inc/acp-panel.php:450
+msgid "Blue"
+msgstr "כחול"
+
+#: inc/acp-toolbar.php:6
+msgid "Toggle accessibility toolbar"
+msgstr "הצגה או הסתרה של סרגל הנגישות"
+
+#: inc/acp-toolbar.php:8
+msgid "Close the accessibility toolbar"
+msgstr "סגירת סרגל הנגישות"
+
+#: inc/acp-toolbar.php:9
+msgid "Accessibilily Toolbar"
+msgstr "סרגל נגישות"
+
+#: inc/acp-toolbar.php:14
+msgid "Font Size"
+msgstr "גודל גופן"
+
+#: inc/acp-toolbar.php:16
+msgid "Decrease font size"
+msgstr "הקטנת גודל הגופן"
+
+#: inc/acp-toolbar.php:17
+msgid "Increase font size"
+msgstr "הגדלת גודל הגופן"
+
+#: inc/acp-toolbar.php:18 inc/acp-toolbar.php:29
+msgid "Back to original"
+msgstr "בחזרה למקור"
+
+#: inc/acp-toolbar.php:25
+msgid "Color contrast"
+msgstr "ניגודיות צבעים"
+
+#: inc/acp-toolbar.php:27
+msgid "Dark contrast"
+msgstr "ניגודיות כהה"
+
+#: inc/acp-toolbar.php:28
+msgid "Bright contrast"
+msgstr "ניגודיות בהירה"
+
+#: inc/acp-toolbar.php:39
+msgid "Highlight Links"
+msgstr "הדגשת קישורים"
+
+#: inc/acp-toolbar.php:42
+msgid "Links Underline"
+msgstr "קו תחתון לקישורים"
+
+#: inc/acp-toolbar.php:50
+msgid "Fonts"
+msgstr "גופנים"
+
+#: inc/acp-toolbar.php:52
+msgid "Readable Font"
+msgstr "גופן קריא"
+
+#: inc/acp-toolbar.php:60
+msgid "Animations"
+msgstr "אנימציות"
+
+#: inc/acp-toolbar.php:62
+msgid "Disable Animations"
+msgstr "ביטול אנימציות"
+
+#: inc/acp-toolbar.php:72
+msgid "Accessibility Declaration"
+msgstr "הצהרת נגישות"
+
+#: inc/acp-toolbar.php:75
+msgid "Contact Us"
+msgstr "השארת משוב"
+
+#: inc/acp_imagealt.php:71
+msgid "Missing ALT's"
+msgstr "תמונות ללא טקסט חלופי"
+
+#: inc/acp_imagealt.php:75
+msgid "ID"
+msgstr "מזהה"
+
+#: inc/acp_imagealt.php:76
+msgid "Thumbnail"
+msgstr "תמונה"
+
+#: inc/acp_imagealt.php:77
+msgid "Image Name"
+msgstr "שם התמונה"
+
+#: inc/acp_imagealt.php:78
+msgid "Actions"
+msgstr "פעולות"
+
+#: inc/acp_imagealt.php:87
+msgid "Thumbnail of"
+msgstr "התמונה של"
+
+#: inc/acp_imagealt.php:91
+msgid "Add Alt"
+msgstr "הוספת טקסט חלופי"
+
+#: inc/acp_imagealt.php:98
+msgid "Congratulation! You don't have images without ALT text."
+msgstr "כל הכבוד! אין לך תמונות שחסר להן טקסט חלופי."
+
+#: inc/acp_skiplinks.php:10
+msgid "Homepage Skiplinks"
+msgstr "קישורי דילוג עבור דף הבית"
+
+#~ msgid "HTML Language Attribute"
+#~ msgstr "מאפיין שפה בתגית html"
